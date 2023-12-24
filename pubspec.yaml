@@ -1,0 +1,43 @@
+name: flutter_chat_app
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+dependencies:
+  cupertino_icons: ^1.0.6
+  firebase_core: ^2.23.0
+  firebase_auth: ^4.14.1
+  google_sign_in: ^6.1.6
+  cloud_firestore: ^4.13.2
+  cached_network_image: ^3.3.0
+  fluent_ui: ^4.8.0
+  emoji_picker_flutter: ^1.6.3
+  image_picker: ^1.0.4
+  firebase_storage: ^11.5.3
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: "^0.13.1"
+  
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "images/icon_app.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  windows:
+    generate: true
+    image_path: "images/icon_app.png"
+    icon_size: 48 # min:48, max:256, default: 48
+
+flutter:
+  uses-material-design: true
+  assets:
+    - images/
